@@ -1,0 +1,184 @@
+.header-layer{
+    /* 触发bfc */
+    /* overflow: hidden; */
+    position: relative;
+    height: 100%;
+}
+.header-layer .logo{
+    width: 190px;
+    height: 120px;
+    /* 会产生margin塌陷 ，通过触发bfc进行处理 */
+    /* margin-top: 10px; */
+    /* 也可以使用定位 */
+    position: absolute;
+    top: 10px;
+    z-index: 0;
+}
+.header-layer .logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+}
+.header-layer .logo a.logo-title{
+    background-image: url('https://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/sprite/header/sprite.png');
+    /* display: none; */
+}
+.header-layer .logo a.logo-bg{
+    background-image: url('https://img10.360buyimg.com/img/jfs/t1/117726/20/7368/88789/5ec3777cE70ffaf64/47d8f5d0310958bd.gif');
+    background-size: 100% 100%;
+    display: none;
+}
+/* .header-layer .logo:hover a.logo-bg{
+    display: block;
+} */
+.header-layer .search{
+    width: 546px;
+    height: 32px;
+    position: absolute;
+    left: 260px;
+    top: 25px;
+    background-color: #fff;
+    border: 2px solid #e2231a;
+}
+.header-layer .search #search-inp{
+    left: 0;
+    padding: 2px 4px 2px 17px;
+    width: 425px;
+    height: 26px;
+    border: 1px solid transparent;
+    line-height: 26px;
+    font-size: 12px;
+    position: absolute;
+    outline: none;
+}
+.header-layer .search #photo{
+    width: 58px;
+    height: 32px;
+    line-height: 32px;
+    color: grey;
+    opacity: 0.5;
+    position: absolute;
+    right: 58px ;
+    border: none;
+    background-color: #fff;
+    font-size: 20px;
+}
+.header-layer .search #photo:hover{
+    color: #e2231a;
+}
+.header-layer .search #search-btn{
+    border-radius: 0;
+    right: 0;
+    width: 58px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #e1251b;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    outline: none;
+    border: none;
+}
+.header-layer .search .settleup{
+    width: 130px;
+    height: 34px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 34px;
+    position: absolute;
+    right: -150px;
+    top: -1px;
+    z-index: 2;
+    color: red;
+    border: 1px solid #e3e4e5;
+    overflow: hidden;
+}
+.header-layer .search .settleup a{
+    color: #e1251b;
+    position: absolute;
+    left: 45px;
+}
+.header-layer .search .settleup .shop{
+    font-size: 16px;
+    position: absolute;
+    left: 20px;
+    top: 1px;
+}
+.header-layer .search .settleup .shopping-count{
+    position: absolute;
+    left: 28px;
+    top: 0px;
+    padding: 1px 6px;
+    background-color: #e1251b;
+    border-radius: 7px;
+    line-height: 12px;
+    color: #fff;
+}
+.header-layer .search .settleup:hover{
+    border-color: #e1251b;
+}
+
+.header-layer .hotWords{
+    position: absolute;
+    left: 260px;
+    top: 65px;
+    width: 550px;
+    height: 20px;
+    line-height: 20px;
+}
+.header-layer .hotWords a{
+    margin-right: 5px;
+    color: #999;
+}
+
+.header-layer .navitems{
+    overflow: hidden;
+    position: absolute;
+    left: 203px;
+    bottom: 0;
+    height: 40px;
+    padding-top: 20px;
+    line-height: 40px;
+    /* background-color: #e1251b; */
+}
+.header-layer .navitems li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    margin: 0 11px;
+}
+.header-layer .navitems li a{
+    color: #999;
+}
+.header-layer .navitems li a:hover{
+    color: red;
+}
+.header-layer a.active{
+    color: #e1251b !important;
+    font-weight: 700;
+}
+.header-layer .search .search-box .search-content{
+    position: absolute;
+    width : 488px ;
+    border: 1px solid #eee;
+    background-color: #fff;
+    top: 35px;
+    z-index: 10;
+    display: none;
+}
+.header-layer .search .search-box .search-content li{
+    height: 24px;
+    line-height: 24px;
+    padding: 0 24px;
+    cursor: pointer;
+}
+.header-layer .search .search-box .search-content li a{
+    color: #666;
+}
+.header-layer .search .search-box .search-content li:hover{
+    background-color: #999;
+}

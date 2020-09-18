@@ -1,0 +1,67 @@
+.my-swiper-wrapper> *{
+    padding:  0;
+    margin: 0;
+    list-style: none;
+}
+.my-swiper-wrapper{
+    /* border: 1px solid black; */
+    position: relative;
+    overflow: hidden;
+}
+.my-swiper-wrapper .my-swiper-fade .my-swiper-list{
+    position: relative;
+}
+.my-swiper-wrapper.my-swiper-fade .my-swiper-list .my-swiper-item{
+    position: absolute;
+    top : 0;
+}
+.my-swiper-wrapper.my-swiper-animate .my-swiper-list{
+    position: absolute;
+}
+.my-swiper-wrapper.my-swiper-animate .my-swiper-list .my-swiper-item{
+    float: left;
+}
+
+.my-swiper-wrapper .my-swiper-btn{
+    width: 25px;
+    height: 40px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.my-swiper-wrapper .my-swiper-btn.my-swiper-lBtn{
+    left: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.my-swiper-wrapper .my-swiper-btn.my-swiper-rBtn{
+    right: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.my-swiper-wrapper .my-swiper-spots{
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+}
+.my-swiper-wrapper .my-swiper-spots span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFF;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.my-swiper-wrapper .my-swiper-spots span.active{
+    background-color: red;
+}
+

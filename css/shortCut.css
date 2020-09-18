@@ -1,0 +1,192 @@
+.shortCut-layer{
+    color: #999;
+}
+.shortCut-layer a{
+    color: #999999;
+}
+.shortCut-layer .position{
+    float: left;
+    margin-left: 10px;
+}
+
+.shortCut-layer .position .dropDown-location{
+    /* display: block; */
+    width: 300px;
+    padding: 10px;
+    /* overflow: hidden; */
+    /* border: 1px solid #999; */
+}
+.shortCut-layer .position .dropDown-location dl{
+    padding: 0;
+    width: 300px;
+    display: inline-block;
+}
+
+.shortCut-layer .position .dropDown-location dd{
+   box-sizing: border-box;
+   width: 60px;
+   padding: 2px 8px;
+}
+
+.shortCut-layer .position .dropDown-location dd.dropActive{
+    background-color: rgb(199, 13, 13);
+    font-weight: bolder;
+}
+.shortCut-layer .position .dropDown-location dd.dropActive a{
+    color: white;
+}
+
+.shortCut-layer .position .dropDown-location dt{
+    /* margin: 9px 0; */
+    color: #8f8f8f;
+    width:290px;
+    margin: 9px auto;
+}
+.shortCut-layer .position .dropDown-location .two dd{
+    width: 150px;
+}
+.shortCut-layer .position .dropDown-location .two {
+    border-bottom: none;
+}
+
+.shortCut-layer .posiiton:hover{
+    border-bottom-color: #fff;
+}
+.shortCut-layer .position:hover .my-dropDown{
+    display: block;
+}
+.shortCut-layer .posiiton .my-dropDown dd{
+    font-weight: 700;
+}
+
+
+
+
+.shortCut-layer .nav{
+    float: right;
+}
+.shortCut-layer  li{
+    float: left;
+    position: relative;
+}
+.shortCut-layer  li.spacer{
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+    margin: 11px 5px 0;
+}
+.shortCut-layer  li .dt{
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px solid transparent;
+    border-top: none;
+    position: relative;
+    z-index: 10;
+}
+.shortCut-layer  li a:hover{
+    color : red;
+}
+.shortCut-layer  li:hover .dt1{
+    background-color: #fff;
+    border-left-color: #eee;
+    border-right-color: #eee;
+}
+
+.shortCut-layer  .my-dropDown{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #eee;
+    line-height: 24px;
+    top: 30px;
+    display: none;
+    z-index: 5;
+}
+.shortCut-layer .my-dropDown dl{
+    padding: 10px 0 10px 15px;
+    border-bottom: 1px solid #eee;
+    /* 为了清除下面dd标签的float属性，产生的浮动的影响 */
+    overflow: hidden;
+
+}
+.shortCut-layer .my-dropDown dd{
+    float: left;
+     /* 不换行 */
+     white-space: nowrap;
+}
+.shortCut-layer  .my-dropDown.my-jd{
+    width: 280px;
+}
+.shortCut-layer .my-dropDown.my-jd dd{
+    width: 126px;
+}
+.shortCut-layer .nav li.my-dropDown:hover .dt{
+    border-bottom-color: #fff;
+}
+.shortCut-layer .nav li:hover .my-dropDown{
+    display: block;
+}
+.shortCut-layer .nav .my-dropDown dt{
+    font-weight: 700;
+}
+.shortCut-layer .nav .my-dropDown.my-company{
+    width: 140px;
+}
+.shortCut-layer .nav .my-dropDown.my-company dd{
+    width: 56px;
+}
+.shortCut-layer .nav .my-dropDown.serve{
+    width: 170px;
+    right: 0;
+}
+.shortCut-layer .nav .my-dropDown.serve dl{
+    padding: 10px 0;
+}
+.shortCut-layer .nav .my-dropDown.serve dt{
+    padding-left: 15px;
+}
+.shortCut-layer .nav .my-dropDown.serve dd{
+    width: 70px;
+    padding-left: 15px;
+}
+
+
+.shortCut-layer .nav .my-dropDown.app{
+    width: 1188px;
+    padding: 15px 0;
+    right: -84px;
+    /* z-index: 10; */
+}
+.shortCut-layer .nav .my-dropDown.app dl{
+    float: left;
+    width: 255px;
+    border-bottom: none;
+    border-left: 1px solid #ccc;
+    padding-top: 0;
+    padding-left: 20px;
+}
+.shortCut-layer .nav .my-dropDown.app dt{
+    color: #666;
+    margin-bottom: 5px;
+}
+.shortCut-layer .nav .my-dropDown.app dd{
+    width: 85px;
+}
+.shortCut-layer .nav .my-dropDown.app dl:nth-child(1){
+    width: 340px;
+    border-left: none;
+}
+.shortCut-layer .nav .my-dropDown.app dl:nth-child(1) dd{
+    width: 85px;
+}
+.shortCut-layer .nav .my-dropDown.app dl:nth-child(2){
+    width: 255px;
+}
+.shortCut-layer .nav .my-dropDown.app dl:nth-child(2) dd{
+    width: 85px;
+}
+.shortCut-layer .nav .my-dropDown.app dl:nth-child(3){
+    width: 255px;
+}
+.shortCut-layer .nav .my-dropDown.app dl:nth-child(4){
+    width: 255px;
+}

@@ -1,0 +1,49 @@
+.fs-layer {
+    height: 100%;
+}
+.fs-layer .fs-1{
+    width: 190px;
+    height: 100%;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+.fs-layer .fs-2{
+    width: 790px;
+    height: 100%;
+    float: left;
+}
+
+.fs-layer .fs-2 .slider-banner-wrapper{
+    width: 590px;
+    margin-top: 10px;
+    height: 470px;
+    float: left;
+    border: none;
+}
+.fs-layer .fs-2 .slider-recommend-wrapper{
+    width: 190px;
+    margin-top: 10px;
+    height: 470px;
+    float: right;
+    border: none;
+}
+
+.focus-item__recommend .recommend-item {
+    height: 150px;
+    display: block;
+    margin-bottom: 10px;
+}
+.focus-item__recommend .recommend-item__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.fs-layer .fs-3{
+    width: 190px;
+    float: right; 
+    height: 100%;
+    /* background-color: aliceblue;   */
+}

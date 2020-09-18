@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.clean::after{
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+}

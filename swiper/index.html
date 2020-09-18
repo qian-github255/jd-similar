@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .item{
+            width: 100%;
+            height: 100%;
+        }
+        .item1 {
+            background-color: aqua;
+        }
+        .item2 {
+            background-color: salmon;
+        }
+        .item3 {
+            background-color: seagreen;
+        }
+
+        .item4 {
+            background-color: seashell;
+        }
+        .demo {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+     <!--
+        高内聚，低耦合
+        把相同的地方放进方法中，不同的地方放进参数传入
+        1、轮播图的内容不同，可能是多张图片，可能是多个dom元素-> 统一处理成一个dom列表  list
+        2、轮播图的大小，width height
+        3、动画效果不同，淡入淡出以及滑动  可以通过type属性
+        4、是否含有按钮进行切换    -》showChangeBtn
+        5、动画时间不同，自动轮播时间  ——》autoTime
+        6、是否显示小圆点  ——》 showSpotBtn
+        7、是否自动轮播——》isAuto
+       -->
+    <div class="wrapper">
+        <div class="img-list">
+            <div class="item item1">item1</div>
+            <div class="item item2">item2</div>
+            <div class="item item3">item3</div>
+        </div>
+    </div>
+
+    <div class="demo">
+        <div class="list">
+            <div class="item item1">item1</div>
+            <div class="item item2">item2</div>
+            <div class="item item3">item3</div>
+            <div class="item item4">item4</div>
+            <!-- <div class="item item1">item1</div> -->
+        </div>
+    </div>
+
+        <script src="/js/jquery-3.4.1.js"></script>
+        <script src="index.js"></script>
+       <script>
+           $('.wrapper').swiper({
+                list: $('.img-list >.item'),
+                width: 500,
+                height: 400,
+                type : 'fade',
+                showChangeBtn: true,
+                autoTime: 3000,
+                showSpotBtn : false,
+                isAuto : true,
+                
+           });
+           $('.demo').swiper({
+               list: $('.list > .item'),
+               width : 200,
+               height : 100,
+               type: 'animate',
+               autoTime : 1000,
+               showChangeBtn : false,
+           })
+       </script>
+</body>
+</html>

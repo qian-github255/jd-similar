@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-size: 12px;
+    background-color: #f4f4f4;
+}
+.shortCut{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #e3e4e5;
+}
+.header{
+    height: 140px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff ;
+}
+.fs{
+    height: 480px;
+    border-bottom: 1px solid #eee;
+}
+.seckill{
+    height: 260px;
+    border-bottom: 1px solid #eee;
+}
+.layer{
+    width: 1190px;
+    margin: 0 auto ;
+}
